@@ -1,0 +1,5 @@
+- name: "John Doe, CEO of XYZ"
+  feedback: "This company transformed our business with their innovative solutions."
+
+- name: "Jane Smith, Founder of ABC"
+  feedback: "Highly recommend their services! A professional and friendly team."

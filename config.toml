@@ -1,0 +1,27 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Your Company Name"
+theme = "tailbliss"
+
+[params]
+  description = "We deliver innovative and scalable technology solutions to businesses worldwide."
+  logo = "/images/logo.png"
+  favicon = "/images/favicon.ico"
+  primaryColor = "#0047AB"
+  secondaryColor = "#F0F0F0"
+
+  # About Us Section
+  [params.about]
+    title = "About Us"
+    description = "We are a technology-driven company specializing in software development, cloud solutions, and cybersecurity."
+    mission = "To empower businesses with innovative digital solutions that drive growth and efficiency."
+    founded = "2015"
+    clientsServed = "500+"
+    teamImage = "/images/team-photo.jpg"
+
+  # Contact Information
+  [params.contact]
+    address = "123 Business Street, City, Country"
+    email = "info@yourcompany.com"
+    phone = "+1 234 567 890"
+    website = "https://yourcompany.com"

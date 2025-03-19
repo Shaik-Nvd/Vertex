@@ -1,0 +1,8 @@
+- title: "Expert Team"
+  description: "Highly skilled professionals with years of experience."
+
+- title: "Client Satisfaction"
+  description: "Our customers love working with us!"
+
+- title: "Innovative Solutions"
+  description: "We use cutting-edge technologies for your projects."

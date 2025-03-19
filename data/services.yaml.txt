@@ -1,0 +1,6 @@
+- title: "Custom Software Development"
+  description: "We build tailored solutions for businesses."
+  icon: "/icons/software.svg"
+- title: "Cloud Security"
+  description: "Secure your cloud infrastructure."
+  icon: "/icons/security.svg"

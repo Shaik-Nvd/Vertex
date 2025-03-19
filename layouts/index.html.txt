@@ -1,0 +1,59 @@
+{{ define "main" }}
+  <section class="relative bg-cover bg-center h-screen flex items-center justify-center" 
+           style="background-image: url('/images/hero-bg.jpg');">
+    <div class="text-center text-white">
+      <h1 class="text-4xl md:text-6xl font-bold">Welcome to Your Company</h1>
+      <p class="text-lg mt-4">Your trusted partner for innovative solutions</p>
+      <a href="/contact" class="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg">
+        Get in Touch
+      </a>
+    </div>
+  </section>
+
+  <section class="container mx-auto text-center py-16">
+    <h2 class="text-3xl font-bold text-gray-900">Our Services</h2>
+    <div class="grid md:grid-cols-3 gap-6 mt-8">
+      {{ range .Site.Data.services }}
+      <div class="p-6 bg-white shadow-lg rounded-lg">
+        <img src="{{ .icon }}" alt="{{ .title }}" class="w-16 mx-auto">
+        <h3 class="text-xl font-semibold mt-4">{{ .title }}</h3>
+        <p class="mt-2 text-gray-600">{{ .description }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="bg-gray-100 py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold">Why Choose Us?</h2>
+      <div class="grid md:grid-cols-3 gap-6 mt-8">
+        {{ range .Site.Data.whyus }}
+        <div class="p-6 bg-white shadow-md rounded-lg">
+          <h3 class="text-xl font-semibold">{{ .title }}</h3>
+          <p class="text-gray-600">{{ .description }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="container mx-auto text-center py-16">
+    <h2 class="text-3xl font-bold">What Our Clients Say</h2>
+    <div class="grid md:grid-cols-2 gap-6 mt-8">
+      {{ range .Site.Data.testimonials }}
+      <div class="p-6 bg-white shadow-lg rounded-lg">
+        <p class="text-gray-700 italic">"{{ .feedback }}"</p>
+        <h3 class="mt-4 font-semibold">{{ .name }}</h3>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="bg-blue-600 py-16 text-white text-center">
+    <h2 class="text-3xl font-bold">Contact Us</h2>
+    <p class="mt-4">Have questions? Reach out to us today.</p>
+    <a href="/contact" class="mt-6 inline-block bg-white text-blue-600 font-bold py-3 px-6 rounded-lg">
+      Get in Touch
+    </a>
+  </section>
+{{ end }}

@@ -1,0 +1,4 @@
+---
+title: "Welcome to My Company"
+description: "We provide cutting-edge solutions for businesses worldwide."
+---
